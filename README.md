@@ -1,4 +1,5 @@
 # writer-app
+![writer app screenshot](img/screenshot.png)
  
 Minimalist writing app created with Electron.js & jQuery in 6+ hours.
 Designed in Figma.
