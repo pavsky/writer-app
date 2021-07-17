@@ -42,6 +42,36 @@
         </div>
       </div>
       <!-- End Dashboard -->
+
+      <!-- New File -->
+      <div id="file-screen">
+        <!-- Navigation -->
+        <div id="navigation">
+          <div id="navigation-items">
+            <button id="open-menu">
+              <img src="img/menu.svg" />
+            </button>
+            <button id="open-help">
+              <img src="img/info.svg" />
+            </button>
+          </div>
+        </div>
+        <!-- End Navigation -->
+        <div class="content-file">
+          <button id="save-file">
+            <img src="img/save.svg" />
+          </button> 
+          <input
+            id="input-title"
+            type="text"
+            class="input-headline"
+            value="Your title goes here"
+          />
+          <p 
+          id="input-body"
+          contenteditable="">Start writing here...</p contenteditable="">
+        </div>
+      </div>
     </div>
     <!-- Menu -->
     <div id="menu">
@@ -49,7 +79,7 @@
         <img src="img/close.svg" />
       </button>
       <div id="menu-links">
-        <button class="menu-link">Files</button>
+        <button id="menu-link-files" class="menu-link">Files</button>
         <button class="menu-link">Settings</button>
       </div>
     </div>
