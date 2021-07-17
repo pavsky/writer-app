@@ -5,15 +5,41 @@ body {
   padding: 0;
   margin: 0;
 }
-
+div {
+  box-sizing: border-box;
+}
+button {
+  transition: all 0.3s ease;
+}
 /* Typography */
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto-Regular.ttf);
+}
 
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+button {
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 20px;
+}
+p {
+  font-size: 14px;
+  line-height: 150%;
 }
 p,
 span,
@@ -25,10 +51,106 @@ li {
 /* Wrapper */
 #wrapper {
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
   box-sizing: border-box;
-  padding: 1em;
   width: 100%;
   height: 100%;
+}
+
+/* Button */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+button:hover {
+  opacity: 0.5;
+}
+
+/* Overlay */
+#overlay {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: none;
+}
+/* Navigation */
+#navigation-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+#dashboard {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+#menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 4;
+  width: 400px;
+  max-width: 100%;
+  height: 100%;
+  display: none;
+  padding: 1em;
+}
+#help {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  z-index: 4;
+  width: 400px;
+  max-width: 100%;
+  height: 100%;
+  display: none;
+  padding: 1em;
+}
+#close-help {
+  float: right;
+}
+#menu-links {
+  margin-top: 84px;
+  display: flex;
+  flex-direction: column;
+}
+.menu-link {
+  border: none;
+  background: none;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
+}
+/* Content */
+.content {
+  margin: 27px 62px;
+}
+.content-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.content-nav #add-new-file {
+  opacity: 0.5;
+  text-decoration: none;
+}
+.content-nav #add-new-file:hover {
+  opacity: 1;
+  text-decoration: underline;
 }

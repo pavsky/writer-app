@@ -11,18 +11,56 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="main.css" />
-
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <title>Writer App</title>
   </head>
   <body>
-    <div id="wrapper"></div>
+    <!-- Overlay -->
+    <div id="overlay"></div>
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Dashboard -->
+      <div id="dashboard">
+        <!-- Navigation -->
+        <div id="navigation">
+          <div id="navigation-items">
+            <button id="open-menu">
+              <img src="img/menu.svg" />
+            </button>
+            <button id="open-help">
+              <img src="img/info.svg" />
+            </button>
+          </div>
+        </div>
+        <!-- End Navigation -->
+        <div class="content">
+          <div class="content-nav">
+            <h2>Files</h2>
+            <button id="add-new-file">Add New +</button>
+          </div>
+        </div>
+      </div>
+      <!-- End Dashboard -->
+    </div>
+    <!-- Menu -->
+    <div id="menu">
+      <button id="close-menu">
+        <img src="img/close.svg" />
+      </button>
+      <div id="menu-links">
+        <button class="menu-link">Files</button>
+        <button class="menu-link">Settings</button>
+      </div>
+    </div>
+    <!-- Help -->
+    <div id="help">
+      <button id="close-help">
+        <img src="img/close.svg" />
+      </button>
+      <p>Some text</p>
+    </div>
+    <!-- End Wrapper -->
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
