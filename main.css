@@ -1,0 +1,34 @@
+/* Global */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+}
+p,
+span,
+ul,
+li {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Wrapper */
+#wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+}

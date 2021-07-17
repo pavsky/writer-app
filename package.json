@@ -1,0 +1,26 @@
+{
+  "name": "writer-app",
+  "version": "0.0.1",
+  "description": "Minimalist writer app created with Figma and Electron.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavsky/writer-app.git"
+  },
+  "keywords": [
+    "figma",
+    "electron.js"
+  ],
+  "author": "@Pavsky @itspavsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavsky/writer-app/issues"
+  },
+  "homepage": "https://github.com/pavsky/writer-app#readme",
+  "devDependencies": {
+    "electron": "^13.1.7"
+  }
+}
