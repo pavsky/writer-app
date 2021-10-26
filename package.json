@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/pavsky/writer-app#readme",
   "devDependencies": {
-    "electron": "^13.1.7"
+    "electron": "^13.3.0"
   },
   "dependencies": {
     "jquery": "^3.6.0"
